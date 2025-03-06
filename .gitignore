@@ -1,0 +1,12 @@
+.env
+.idea
+npm
+registries
+deps
+dep_analysis_cache_v1
+dep_analysis_cache_v1-journal
+deno.lock
+test_fargate.ts
+test.ts
+.vscode
+node_modules
