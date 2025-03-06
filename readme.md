@@ -1,6 +1,4 @@
-# Backend Test
-
-Este es un repositorio de prueba para evaluar la funcionalidad de PR-Reviewer. Consiste en una API RESTful para un sistema de comercio electrónico simple, desarrollada con Node.js, Express y TypeScript.
+ Consiste en una API RESTful para un sistema de comercio electrónico simple, desarrollada con Node.js, Express y TypeScript.
 
 ## Estructura del Proyecto
 
