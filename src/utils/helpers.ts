@@ -80,3 +80,32 @@ export const paginateResults = <T>(
     totalPages: Math.ceil(array.length / limit)
   };
 };
+
+/**
+ * Formatea una fecha en un formato específico
+ * @param date Fecha a formatear
+ * @param format Formato deseado (default: 'DD/MM/YYYY')
+ * @returns Fecha formateada como string
+ */
+export const formatDate = (
+  date: Date | string,
+  format: string = 'DD/MM/YYYY'
+): string => {
+  const d = new Date(date);
+  
+  if (isNaN(d.getTime())) {
+    return 'Fecha inválida';
+  }
+  
+  const day = d.getDate().toString().padStart(2, '0');
+  const month = (d.getMonth() + 1).toString().padStart(2, '0');
+  const year = d.getFullYear();
+  
+  let formattedDate = format
+    .replace('DD', day)
+    .replace('MM', month)
+    .replace('YYYY', year.toString())
+    .replace('YY', year.toString().slice(-2));
+    
+  return formattedDate;
+};
