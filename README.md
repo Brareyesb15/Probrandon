@@ -1,5 +1,5 @@
 ```markdown
-### 💖 CodeGPT Bot - Nouvelle Demande de Tirage Créée
+### 🤖 CodeGPT Bot - Nouvelle Demande de Tirage Créée
 
 | Détail | Valeur |
 |--------|-------|
