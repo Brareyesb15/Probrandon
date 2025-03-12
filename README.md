@@ -1,47 +1,47 @@
 ```markdown
-### 🤖 CodeGPT Bot - Nouvelle Demande de Tirage Créée
+# Probrandon
 
-| Détail | Valeur |
+| Detail | Value |
 |--------|-------|
-| Projet | Brareyesb15/Probrandon |
-| Titre | Test 1 |
-| Branche | Main |
-| Auteur | Brareyesb15 |
-| Dernière Mise à Jour | 2025-03-12T20:34:02Z |
-| Événement | create_readme |
+| Project | Brareyesb15/Probrandon |
+| Title | Test 1 |
+| Branch | Main |
+| Author | Brareyesb15 |
+| Last Updated | 2025-03-12T20:34:02Z |
+| Event | create_readme |
 
-### Résumé
-Cette demande de tirage introduit de nouvelles fonctionnalités, y compris un utilitaire de formatage de date et un générateur de mots de passe sécurisé. De plus, elle modifie le fichier de connexion à la base de données pour inclure le module process, améliorant ainsi la fonctionnalité globale de l'application.
+## Zusammenfassung
+Diese Pull-Anfrage führt neue Funktionen ein, einschließlich eines Datumsformatierungswerkzeugs und eines sicheren Passwortgenerators. Darüber hinaus wird die Datenbankverbindungsdatei geändert, um das Modul `process` einzuschließen, was die Gesamtfunktionalität der Anwendung verbessert.
 
-### Vue d'Ensemble des Changements
-Les changements se concentrent principalement sur l'amélioration des fonctions utilitaires au sein du projet. L'ajout de la fonction `formatDate` permet un formatage de date flexible, tandis que la fonction `generateSecurePassword` fournit un moyen de créer des mots de passe forts. L'inclusion du module `process` dans le fichier de configuration de la base de données améliore la gestion des variables d'environnement.
+## Überblick über die Änderungen
+Die Änderungen konzentrieren sich hauptsächlich auf die Verbesserung der Hilfsfunktionen innerhalb des Projekts. Die Hinzufügung der Funktion `formatDate` ermöglicht eine flexible Datumsformatierung, während die Funktion `generateSecurePassword` eine Möglichkeit bietet, starke Passwörter zu erstellen. Die Einbeziehung des Moduls `process` in die Datenbankkonfigurationsdatei verbessert die Verwaltung von Umgebungsvariablen.
 
-### Fichiers Modifiés
+## Geänderte Dateien
 - **src/config/database.ts**
-  - **Changement** : Ajout de l'importation du module `process`.
-  - **Impact** : Ce changement permet une meilleure gestion des variables d'environnement, ce qui est crucial pour les configurations de connexion à la base de données.
+  - **Änderung**: Hinzufügen des Imports des Moduls `process`.
+  - **Auswirkung**: Diese Änderung ermöglicht eine bessere Verwaltung von Umgebungsvariablen, was für die Konfiguration der Datenbankverbindungen entscheidend ist.
 
 - **src/utils/helpers.ts**
-  - **Changement** : Introduction de la fonction `formatDate` pour un formatage de date flexible.
-  - **Impact** : Cet utilitaire améliore la capacité à formater les dates dans toute l'application, améliorant ainsi l'expérience utilisateur et la présentation des données.
+  - **Änderung**: Einführung der Funktion `formatDate` für eine flexible Datumsformatierung.
+  - **Auswirkung**: Dieses Hilfsprogramm verbessert die Fähigkeit, Daten in der gesamten Anwendung zu formatieren, was die Benutzererfahrung und die Präsentation der Daten verbessert.
 
 - **src/utils/security.ts**
-  - **Changement** : Ajout de la fonction `generateSecurePassword` pour créer des mots de passe sécurisés.
-  - **Impact** : Cette fonction augmente la sécurité en fournissant un moyen fiable de générer des mots de passe forts, ce qui est essentiel pour les processus d'authentification des utilisateurs.
+  - **Änderung**: Hinzufügen der Funktion `generateSecurePassword` zur Erstellung sicherer Passwörter.
+  - **Auswirkung**: Diese Funktion erhöht die Sicherheit, indem sie eine zuverlässige Möglichkeit bietet, starke Passwörter zu generieren, was für die Authentifizierungsprozesse der Benutzer unerlässlich ist.
 
 - **src/utils/validation.ts**
-  - **Changement** : Ajout de 'array' comme type de données valide dans `ValidDataType`.
-  - **Impact** : Cette modification élargit les capacités de validation de l'application, permettant une meilleure gestion des données.
+  - **Änderung**: Hinzufügen von 'array' als gültigen Datentyp in `ValidDataType`.
+  - **Auswirkung**: Diese Änderung erweitert die Validierungsfähigkeiten der Anwendung und ermöglicht eine bessere Datenverwaltung.
 
 <details>
-<summary>Détails Techniques</summary>
-- La fonction `formatDate` prend une date et une chaîne de format, retournant la date formatée sous forme de chaîne. Elle inclut une gestion des erreurs pour les dates invalides.
-- La fonction `generateSecurePassword` génère un mot de passe aléatoire avec une longueur et des options de caractères spécifiées, garantissant un mélange de types de caractères pour une sécurité accrue.
-- L'ajout du module `process` dans `database.ts` permet une configuration dynamique basée sur des variables d'environnement, ce qui est une bonne pratique pour la gestion des informations sensibles.
+<summary>Technische Details</summary>
+- Die Funktion `formatDate` nimmt ein Datum und eine Formatzeichenfolge und gibt das formatierte Datum als Zeichenfolge zurück. Sie enthält eine Fehlerbehandlung für ungültige Daten.
+- Die Funktion `generateSecurePassword` generiert ein zufälliges Passwort mit einer angegebenen Länge und Zeichenoptionen und gewährleistet eine Mischung von Zeichentypen für erhöhte Sicherheit.
+- Die Hinzufügung des Moduls `process` in `database.ts` ermöglicht eine dynamische Konfiguration basierend auf Umgebungsvariablen, was eine bewährte Methode für den Umgang mit sensiblen Informationen ist.
 </details>
 
-### Installation
-Pour installer le projet, clonez le dépôt et exécutez les commandes suivantes :
+## Installation
+Um das Projekt zu installieren, klonen Sie das Repository und führen Sie die folgenden Befehle aus:
 
 ```bash
 git clone https://github.com/Brareyesb15/Probrandon.git
@@ -49,14 +49,14 @@ cd Probrandon
 npm install
 ```
 
-### Utilisation
-Pour utiliser les nouvelles fonctionnalités, importez les utilitaires dans votre code comme suit :
+## Verwendung
+Um die neuen Funktionen zu nutzen, importieren Sie die Hilfsprogramme in Ihren Code wie folgt:
 
 ```javascript
 import { formatDate } from './utils/helpers';
 import { generateSecurePassword } from './utils/security';
 ```
 
-### Contribuer
-Les contributions sont les bienvenues ! Veuillez soumettre une demande de tirage pour toute modification ou amélioration.
+## Mitwirken
+Beiträge sind willkommen! Bitte reichen Sie eine Pull-Anfrage für Änderungen oder Verbesserungen ein.
 ```
