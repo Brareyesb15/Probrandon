@@ -1,53 +1,53 @@
 # Probrandon
 
-## Beschrijving
-Probrandon is een project dat zich richt op het bieden van verschillende hulpfuncties en beveiligingsmechanismen. Het bevat functionaliteiten voor databaseverbindingen, gegevensvalidatie, en het genereren van veilige wachtwoorden.
+## Descripción
+Probrandon es un proyecto que se centra en proporcionar diversas funciones de ayuda y mecanismos de seguridad. Incluye funcionalidades para conexiones a bases de datos, validación de datos, generación de contraseñas seguras y formateo de fechas.
 
-## Installatie
-Om het project lokaal te installeren, volg deze stappen:
+## Instalación
+Para instalar el proyecto localmente, sigue estos pasos:
 
-1. Clone de repository:
+1. Clona el repositorio:
    ```bash
    git clone https://github.com/Brareyesb15/Probrandon.git
    ```
-2. Navigeer naar de projectmap:
+2. Navega a la carpeta del proyecto:
    ```bash
    cd Probrandon
    ```
-3. Installeer de vereiste afhankelijkheden:
+3. Instala las dependencias requeridas:
    ```bash
    npm install
    ```
 
-## Gebruik
-Hier zijn enkele van de belangrijkste functies die beschikbaar zijn in dit project:
+## Uso
+Aquí hay algunas de las funciones principales disponibles en este proyecto:
 
-### Database Verbinding
-De databaseverbinding kan worden gemaakt met de volgende functie:
+### Conexión a la Base de Datos
+La conexión a la base de datos se puede realizar con la siguiente función:
 ```typescript
 import { connectDB } from './src/config/database';
 ```
 
-### Gegevensvalidatie
-De validatiefuncties kunnen worden gebruikt om verschillende datatypes te controleren:
+### Validación de Datos
+Las funciones de validación se pueden utilizar para verificar diferentes tipos de datos:
 ```typescript
 import { ValidDataType } from './src/utils/validation';
 ```
 
-### Wachtwoord Generatie
-Om een veilig wachtwoord te genereren, gebruik de volgende functie:
+### Generación de Contraseñas
+Para generar una contraseña segura, utiliza la siguiente función:
 ```typescript
 import { generateSecurePassword } from './src/utils/security';
 ```
 
-### Datum Formatteren
-Gebruik de functie `formatDate` om een datum in een specifiek formaat te formatteren:
+### Formateo de Fechas
+Utiliza la función `formatDate` para formatear una fecha en un formato específico:
 ```typescript
 import { formatDate } from './src/utils/helpers';
 ```
 
-## Bijdragen
-Bijdragen aan dit project zijn welkom! Voel je vrij om een pull request in te dienen of een issue te openen.
+## Contribuciones
+¡Las contribuciones a este proyecto son bienvenidas! Siéntete libre de enviar un pull request o abrir un issue.
 
-## Licentie
-Dit project is gelicentieerd onder de MIT-licentie. Zie het LICENSE-bestand voor meer informatie.
+## Licencia
+Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo LICENSE para más información.
