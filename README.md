@@ -1,40 +1,62 @@
-### 🤖 CodeGPT Bot - New Pull Request Created
+```markdown
+### 💖 CodeGPT Bot - Nouvelle Demande de Tirage Créée
 
-| Detail | Value |
+| Détail | Valeur |
 |--------|-------|
-| Project | Brareyesb15/Probrandon |
-| Title | Prueba 1 |
-| Branch | Main |
-| Author | Brareyesb15 |
-| Last Updated | 2025-03-12T20:34:02Z |
-| Event | create_readme |
+| Projet | Brareyesb15/Probrandon |
+| Titre | Test 1 |
+| Branche | Main |
+| Auteur | Brareyesb15 |
+| Dernière Mise à Jour | 2025-03-12T20:34:02Z |
+| Événement | create_readme |
 
-### Summary
-This pull request introduces new features including a date formatting utility and a secure password generator. Additionally, it modifies the database connection file to include the process module, enhancing the overall functionality of the application.
+### Résumé
+Cette demande de tirage introduit de nouvelles fonctionnalités, y compris un utilitaire de formatage de date et un générateur de mots de passe sécurisé. De plus, elle modifie le fichier de connexion à la base de données pour inclure le module process, améliorant ainsi la fonctionnalité globale de l'application.
 
-### Changes Overview
-The changes primarily focus on enhancing utility functions within the project. The addition of the `formatDate` function allows for flexible date formatting, while the `generateSecurePassword` function provides a method for creating strong passwords. The inclusion of the `process` module in the database configuration file improves the handling of environment variables.
+### Vue d'Ensemble des Changements
+Les changements se concentrent principalement sur l'amélioration des fonctions utilitaires au sein du projet. L'ajout de la fonction `formatDate` permet un formatage de date flexible, tandis que la fonction `generateSecurePassword` fournit un moyen de créer des mots de passe forts. L'inclusion du module `process` dans le fichier de configuration de la base de données améliore la gestion des variables d'environnement.
 
-### Files Changed
+### Fichiers Modifiés
 - **src/config/database.ts**
-  - **Change**: Added import for the `process` module.
-  - **Impact**: This change allows for better management of environment variables, which is crucial for database connection configurations.
+  - **Changement** : Ajout de l'importation du module `process`.
+  - **Impact** : Ce changement permet une meilleure gestion des variables d'environnement, ce qui est crucial pour les configurations de connexion à la base de données.
 
 - **src/utils/helpers.ts**
-  - **Change**: Introduced `formatDate` function for flexible date formatting.
-  - **Impact**: This utility enhances the ability to format dates throughout the application, improving user experience and data presentation.
+  - **Changement** : Introduction de la fonction `formatDate` pour un formatage de date flexible.
+  - **Impact** : Cet utilitaire améliore la capacité à formater les dates dans toute l'application, améliorant ainsi l'expérience utilisateur et la présentation des données.
 
 - **src/utils/security.ts**
-  - **Change**: Added `generateSecurePassword` function for creating secure passwords.
-  - **Impact**: This function increases security by providing a reliable way to generate strong passwords, which is essential for user authentication processes.
+  - **Changement** : Ajout de la fonction `generateSecurePassword` pour créer des mots de passe sécurisés.
+  - **Impact** : Cette fonction augmente la sécurité en fournissant un moyen fiable de générer des mots de passe forts, ce qui est essentiel pour les processus d'authentification des utilisateurs.
 
 - **src/utils/validation.ts**
-  - **Change**: Added 'array' as a valid data type in `ValidDataType`.
-  - **Impact**: This modification expands the validation capabilities of the application, allowing for better data handling.
+  - **Changement** : Ajout de 'array' comme type de données valide dans `ValidDataType`.
+  - **Impact** : Cette modification élargit les capacités de validation de l'application, permettant une meilleure gestion des données.
 
 <details>
-<summary>Technical Details</summary>
-- The `formatDate` function takes a date and a format string, returning the formatted date as a string. It includes error handling for invalid dates.
-- The `generateSecurePassword` function generates a random password with specified length and character options, ensuring a mix of character types for enhanced security.
-- The addition of the `process` module in `database.ts` allows for dynamic configuration based on environment variables, which is a best practice for managing sensitive information.
+<summary>Détails Techniques</summary>
+- La fonction `formatDate` prend une date et une chaîne de format, retournant la date formatée sous forme de chaîne. Elle inclut une gestion des erreurs pour les dates invalides.
+- La fonction `generateSecurePassword` génère un mot de passe aléatoire avec une longueur et des options de caractères spécifiées, garantissant un mélange de types de caractères pour une sécurité accrue.
+- L'ajout du module `process` dans `database.ts` permet une configuration dynamique basée sur des variables d'environnement, ce qui est une bonne pratique pour la gestion des informations sensibles.
 </details>
+
+### Installation
+Pour installer le projet, clonez le dépôt et exécutez les commandes suivantes :
+
+```bash
+git clone https://github.com/Brareyesb15/Probrandon.git
+cd Probrandon
+npm install
+```
+
+### Utilisation
+Pour utiliser les nouvelles fonctionnalités, importez les utilitaires dans votre code comme suit :
+
+```javascript
+import { formatDate } from './utils/helpers';
+import { generateSecurePassword } from './utils/security';
+```
+
+### Contribuer
+Les contributions sont les bienvenues ! Veuillez soumettre une demande de tirage pour toute modification ou amélioration.
+```
