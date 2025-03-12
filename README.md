@@ -1,13 +1,14 @@
 # Probrandon
 
 ## Description
-Probrandon is a robust application designed to facilitate various functionalities, including secure password generation, date formatting, and data validation. This repository serves as a comprehensive toolkit for developers looking to enhance their applications with essential utilities. The application is built with TypeScript and utilizes MongoDB for data storage, ensuring a reliable and scalable solution.
+Probrandon is a robust application designed to facilitate various functionalities, including secure password generation, date formatting, data validation, and product management. This repository serves as a comprehensive toolkit for developers looking to enhance their applications with essential utilities. The application is built with TypeScript and utilizes MongoDB for data storage, ensuring a reliable and scalable solution.
 
 ## Features
 - **Database Connection**: Connects to a MongoDB database using Mongoose, allowing for seamless data management.
 - **Date Formatting**: Formats dates into specified formats, supporting various output styles.
 - **Secure Password Generation**: Generates strong, random passwords with customizable options, ensuring security best practices.
-- **Data Validation**: Validates various data types, including email, password, object IDs, and arrays, to maintain data integrity.
+- **Data Validation**: Validates various data types, including email, password, object IDs, arrays, and more, to maintain data integrity.
+- **Product Management**: Includes functionality for managing products, including the ability to delete products from the database.
 
 ## Installation
 To install Probrandon, follow these steps:
@@ -52,6 +53,16 @@ This function allows you to specify the length of the password and whether to in
 ### Validating Data
 To validate data types, use the `isSafeString` function from the `src/utils/security.ts` file and the `ValidDataType` type from the `src/utils/validation.ts` file. The validation now includes support for arrays as a valid data type.
 
+### Deleting Products
+To delete a product, use the `deleteProduct` function from the `src/utils/product.ts` file:
+```typescript
+import { deleteProduct } from './utils/product';
+
+const result = await deleteProduct(productId);
+console.log(result);
+```
+This function takes a product ID as an argument and removes the corresponding product from the database, returning a confirmation of the deletion.
+
 ## Project Structure
 ```
 Probrandon/
@@ -61,7 +72,8 @@ Probrandon/
 │   ├── utils/
 │   │   ├── helpers.ts
 │   │   ├── security.ts
-│   │   └── validation.ts
+│   │   ├── validation.ts
+│   │   └── product.ts
 │   └── ...
 ├── package.json
 └── README.md
@@ -89,6 +101,12 @@ Probrandon/
 ### `isSafeString(input: string): boolean`
 - Validates if a string is safe based on predefined patterns.
 - **Returns**: boolean indicating safety.
+
+### `deleteProduct(productId: string): Promise<string>`
+- Deletes a product from the database.
+- **Parameters**:
+  - `productId`: The ID of the product to delete.
+- **Returns**: Confirmation message of the deletion.
 
 ## Dependencies
 - **Mongoose**: For MongoDB object modeling.
