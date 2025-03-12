@@ -1,7 +1,7 @@
 # Probrandon
 
 ## Descripción
-Probrandon es un proyecto que se centra en proporcionar diversas funciones de ayuda y mecanismos de seguridad. Incluye funcionalidades para conexiones a bases de datos, validación de datos, generación de contraseñas seguras, formateo de fechas y paginación de resultados. Este proyecto está diseñado para ser flexible y fácil de usar, permitiendo a los desarrolladores integrar estas funcionalidades en sus aplicaciones de manera eficiente.
+Probrandon es un proyecto que se centra en proporcionar diversas funciones de ayuda y mecanismos de seguridad. Incluye funcionalidades para conexiones a bases de datos, validación de datos, generación de contraseñas seguras, formateo de fechas, paginación de resultados y más. Este proyecto está diseñado para ser flexible y fácil de usar, permitiendo a los desarrolladores integrar estas funcionalidades en sus aplicaciones de manera eficiente.
 
 ## Instalación
 Para instalar el proyecto localmente, sigue estos pasos:
@@ -52,6 +52,11 @@ Esta función permite formatear fechas en el formato deseado, con un formato pre
 
 ### Paginación de Resultados
 La función `paginateResults` permite paginar un conjunto de resultados, facilitando la gestión de grandes volúmenes de datos.
+
+## Nuevas Funcionalidades
+- **Validación de Arrays**: Se ha añadido la capacidad de validar arrays como un nuevo tipo de dato.
+- **Generación de Contraseñas Seguras**: Se ha mejorado la función de generación de contraseñas para incluir opciones de longitud y caracteres especiales.
+- **Formateo de Fechas**: Se ha implementado una nueva función para formatear fechas en un formato específico.
 
 ## Contribuciones
 ¡Las contribuciones a este proyecto son bienvenidas! Siéntete libre de enviar un pull request o abrir un issue.
