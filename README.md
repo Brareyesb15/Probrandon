@@ -52,6 +52,49 @@ This function allows you to specify the length of the password and whether to in
 ### Validating Data
 To validate data types, use the `isSafeString` function from the `src/utils/security.ts` file and the `ValidDataType` type from the `src/utils/validation.ts` file. The validation now includes support for arrays as a valid data type.
 
+## Project Structure
+```
+Probrandon/
+├── src/
+│   ├── config/
+│   │   └── database.ts
+│   ├── utils/
+│   │   ├── helpers.ts
+│   │   ├── security.ts
+│   │   └── validation.ts
+│   └── ...
+├── package.json
+└── README.md
+```
+
+## API Documentation
+### `connectDB()`
+- Connects to the MongoDB database.
+- **Returns**: Promise<void>
+
+### `formatDate(date: Date | string, format: string = 'DD/MM/YYYY'): string`
+- Formats a given date into a specified format.
+- **Parameters**:
+  - `date`: The date to format.
+  - `format`: The desired format (default: 'DD/MM/YYYY').
+- **Returns**: Formatted date as a string.
+
+### `generateSecurePassword(length: number = 12, includeSpecialChars: boolean = true): string`
+- Generates a secure random password.
+- **Parameters**:
+  - `length`: Length of the password (default: 12).
+  - `includeSpecialChars`: Whether to include special characters (default: true).
+- **Returns**: Generated password.
+
+### `isSafeString(input: string): boolean`
+- Validates if a string is safe based on predefined patterns.
+- **Returns**: boolean indicating safety.
+
+## Dependencies
+- **Mongoose**: For MongoDB object modeling.
+- **TypeScript**: For type safety and development.
+- **Node.js**: Runtime environment.
+
 ## Contribution
 Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
 
