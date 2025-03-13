@@ -1,67 +1,69 @@
+```
 # Probrandon
 
 ## Description
-Probrandon is a web application designed to manage orders, products, and users efficiently. It provides a robust API for handling various operations related to e-commerce functionalities.
+Probrandon est une application web conçue pour gérer efficacement les commandes, les produits et les utilisateurs. Elle fournit une API robuste pour gérer diverses opérations liées aux fonctionnalités de commerce électronique.
 
-## Features
-- User authentication and authorization
-- Order management
-- Product management
-- Input validation and error handling
+## Fonctionnalités
+- Authentification et autorisation des utilisateurs
+- Gestion des commandes
+- Gestion des produits
+- Validation des entrées et gestion des erreurs
 
 ## Installation
 
-### Prerequisites
-- Node.js (version 14 or higher)
-- TypeScript (version 4 or higher)
-- MongoDB (or any other database as configured)
+### Prérequis
+- Node.js (version 14 ou supérieure)
+- TypeScript (version 4 ou supérieure)
+- MongoDB (ou toute autre base de données configurée)
 
-### Steps
-1. Clone the repository:
+### Étapes
+1. Clonez le dépôt :
    ```bash
    git clone https://github.com/Brareyesb15/Probrandon.git
    ```
-2. Navigate to the project directory:
+2. Accédez au répertoire du projet :
    ```bash
    cd Probrandon
    ```
-3. Install the dependencies:
+3. Installez les dépendances :
    ```bash
    npm install
    ```
-4. Configure the database settings in `src/config/database.ts`.
+4. Configurez les paramètres de la base de données dans `src/config/database.ts`.
 
-## Usage
-To start the application, run the following command:
+## Utilisation
+Pour démarrer l'application, exécutez la commande suivante :
 ```bash
 npm start
 ```
-The server will start on the configured port (default is 3000).
+Le serveur démarrera sur le port configuré (par défaut 3000).
 
-### API Endpoints
-- **User Routes**
-  - `POST /api/users` - Create a new user
-  - `GET /api/users` - Retrieve all users
-- **Product Routes**
-  - `POST /api/products` - Add a new product
-  - `GET /api/products` - Retrieve all products
-- **Order Routes**
-  - `POST /api/orders` - Create a new order
-  - `GET /api/orders` - Retrieve all orders
+### Points de terminaison API
+- **Routes Utilisateur**
+  - `POST /api/users` - Créer un nouvel utilisateur
+  - `GET /api/users` - Récupérer tous les utilisateurs
+- **Routes Produit**
+  - `POST /api/products` - Ajouter un nouveau produit
+  - `GET /api/products` - Récupérer tous les produits
+- **Routes Commande**
+  - `POST /api/orders` - Créer une nouvelle commande
+  - `GET /api/orders` - Récupérer toutes les commandes
 
 ## Middleware
-The application includes middleware for:
-- Authentication (`src/middleware/auth.middleware.ts`)
-- Error handling (`src/middleware/error.middleware.ts`)
-- Input validation (`src/middleware/validation.middleware.ts`)
+L'application inclut des middleware pour :
+- Authentification (`src/middleware/auth.middleware.ts`)
+- Gestion des erreurs (`src/middleware/error.middleware.ts`)
+- Validation des entrées (`src/middleware/validation.middleware.ts`)
 
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request.
+## Contribuer
+Les contributions sont les bienvenues ! Veuillez suivre ces étapes :
+1. Forkez le dépôt.
+2. Créez une nouvelle branche (`git checkout -b feature/VotreFonctionnalité`).
+3. Apportez vos modifications et validez-les (`git commit -m 'Ajoutez une fonctionnalité'`).
+4. Poussez vers la branche (`git push origin feature/VotreFonctionnalité`).
+5. Ouvrez une demande de tirage.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Licence
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+```
