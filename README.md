@@ -5,7 +5,7 @@ Probrandon is a robust application designed to manage various functionalities re
 
 ## Features
 - **User Management**: Create, read, update, and delete user accounts with secure authentication.
-- **Product Management**: Manage product listings, including adding new products and updating existing ones.
+- **Product Management**: Manage product listings, including adding new products, updating existing ones, and deleting products.
 - **Order Processing**: Handle order creation and management efficiently.
 - **Data Validation**: Ensure that all inputs are validated against specified criteria to maintain data integrity.
 - **Security Utilities**: Generate secure passwords and validate input strings to prevent security vulnerabilities.
@@ -43,6 +43,7 @@ After setting up the application, you can access the API endpoints for user, pro
 ### Product Management
 - **Add Product**: Send a POST request to `/api/products` with product details.
 - **Update Product**: Send a PUT request to `/api/products/:id` to update product information.
+- **Delete Product**: Send a DELETE request to `/api/products/:id` to remove a product from the inventory.
 
 ### Order Processing
 - **Create Order**: Send a POST request to `/api/orders` with order details.
