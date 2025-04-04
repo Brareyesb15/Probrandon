@@ -11,6 +11,7 @@ export type ValidDataType =
   | 'email' 
   | 'password'
   | 'objectId';
+  | 'array';
 
 /**
  * Valida que un valor sea del tipo especificado

@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import { logger } from './logger';
+import process from "node:process";
 
 export const connectDB = async (): Promise<void> => {
   try {

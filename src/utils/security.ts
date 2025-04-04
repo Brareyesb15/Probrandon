@@ -76,3 +76,45 @@ export const isSafeString = (input: string): boolean => {
   
   return !dangerousPatterns.some(pattern => pattern.test(input));
 };
+
+/**
+ * Genera una contraseña aleatoria segura
+ * @param length Longitud de la contraseña (default: 12)
+ * @param includeSpecialChars Si debe incluir caracteres especiales (default: true)
+ * @returns Contraseña generada
+ */
+export const generateSecurePassword = (
+  length: number = 12,
+  includeSpecialChars: boolean = true
+): string => {
+  const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
+  const numberChars = '0123456789';
+  const specialChars = '!@#$%^&*()_+~`|}{[]:;?><,./-=';
+  
+  let allChars = uppercaseChars + lowercaseChars + numberChars;
+  if (includeSpecialChars) {
+    allChars += specialChars;
+  }
+  
+  // Asegurar que la contraseña tenga al menos un carácter de cada tipo
+  let password = '';
+  password += uppercaseChars.charAt(Math.floor(Math.random() * uppercaseChars.length));
+  password += lowercaseChars.charAt(Math.floor(Math.random() * lowercaseChars.length));
+  password += numberChars.charAt(Math.floor(Math.random() * numberChars.length));
+  
+  if (includeSpecialChars) {
+    password += specialChars.charAt(Math.floor(Math.random() * specialChars.length));
+  }
+  
+  // Completar el resto de la contraseña con caracteres aleatorios
+  for (let i = password.length; i < length; i++) {
+    password += allChars.charAt(Math.floor(Math.random() * allChars.length));
+  }
+  
+  // Mezclar los caracteres para que no siempre siga el mismo patrón
+  return password
+    .split('')
+    .sort(() => Math.random() - 0.5)
+    .join('');
+};
