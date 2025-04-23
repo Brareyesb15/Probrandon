@@ -140,7 +140,6 @@ export class UserController {
         return;
       }
       
-      // Verificar contraseña actual
       const isPasswordValid = await user.comparePassword(currentPassword);
       
       if (!isPasswordValid) {
