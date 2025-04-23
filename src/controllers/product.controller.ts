@@ -4,7 +4,7 @@ import { logger } from '../config/logger';
 
 export class ProductController {
   /**
-   * Obtiene todos los productos cambio s
+   * Obtiene todos los productos cambios
    * @route GET /api/products
    */
   static async getAllProducts(req: Request, res: Response): Promise<void> {
