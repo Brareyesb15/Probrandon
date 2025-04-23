@@ -141,7 +141,7 @@ export class UserController {
       }
       
       const isPasswordValid = await user.comparePassword(currentPassword);
-      /sssss
+      //lastune
       if (!isPasswordValid) {
         res.status(401).json({
           success: false,
